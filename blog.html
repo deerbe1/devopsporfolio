@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<link rel="stylesheet" href="style.css" />
-<script src="theme.js"></script>
-
 <head>
   <meta charset="UTF-8" />
   <title>Blog — DevOps Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <nav class="nav">
-    <a href="index.html" class="nav-item">Home</a>
-    <a href="skills.html" class="nav-item">Skills</a>
-    <a href="experience.html" class="nav-item">Experience</a>
-    <a href="projects.html" class="nav-item">Projects</a>
-    <a href="blog.html" class="nav-item active">Blog</a>
-    <button id="theme-toggle" class="theme-btn">🌙</button>
+    <div class="nav-left">
+      <span class="nav-brand">DevOps Portfolio</span>
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="skills.html" class="nav-item">Skills</a>
+      <a href="experience.html" class="nav-item">Experience</a>
+      <a href="projects.html" class="nav-item">Projects</a>
+      <a href="blog.html" class="nav-item active">Blog</a>
+    </div>
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
   </nav>
 
-  <div class="container">
+  <main class="container">
     <h1 class="page-title">Blog</h1>
 
-    <section class="card">
-      <h3>How I Design Production-Ready CI/CD Pipelines</h3>
+    <section class="card blog-post">
+      <h2>Designing Production-Ready CI/CD Pipelines</h2>
+      <p class="blog-meta">Topic: CI/CD · Reliability</p>
       <p>
-        A breakdown of my approach to building secure, scalable, and observable pipelines
-        using GitHub Actions, Argo CD, and Terraform.
+        A breakdown of how I approach building secure, scalable, and observable pipelines using GitHub Actions,
+        Argo CD, and Terraform—from commit to production.
       </p>
-      <a href="#" class="nav-item">Read More →</a>
+      <a href="#" class="blog-link">Read more →</a>
     </section>
 
-    <section class="card">
-      <h3>Why Every Team Needs SLOs</h3>
+    <section class="card blog-post">
+      <h2>Why SLOs Change the Conversation</h2>
+      <p class="blog-meta">Topic: SRE · SLOs</p>
       <p>
-        SLOs transform reliability from guesswork into engineering discipline.
-        Here’s how I introduce them to teams.
+        SLOs turn reliability into a shared language between engineering and the business. This post covers how
+        I introduce SLOs, error budgets, and better alerting.
       </p>
-      <a href="#" class="nav-item">Read More →</a>
+      <a href="#" class="blog-link">Read more →</a>
     </section>
 
-    <section class="card">
-      <h3>My DevOps Toolkit for 2025</h3>
+    <section class="card blog-post">
+      <h2>My DevOps Toolkit for Modern Teams</h2>
+      <p class="blog-meta">Topic: Tooling · DevEx</p>
       <p>
-        The tools I rely on daily for automation, observability, and cloud operations.
+        The tools I rely on daily for automation, observability, and developer experience—and how they fit
+        together into a cohesive platform.
       </p>
-      <a href="#" class="nav-item">Read More →</a>
+      <a href="#" class="blog-link">Read more →</a>
     </section>
-  </div>
+  </main>
+
+  <footer class="footer">
+    <span>Writing to share lessons, patterns, and experiments.</span>
+  </footer>
 
   <script src="theme.js"></script>
 </body>

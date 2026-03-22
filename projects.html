@@ -1,56 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<link rel="stylesheet" href="style.css" />
-<script src="theme.js"></script>
-
 <head>
   <meta charset="UTF-8" />
   <title>Projects — DevOps Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <nav class="nav">
-    <a href="index.html" class="nav-item">Home</a>
-    <a href="skills.html" class="nav-item">Skills</a>
-    <a href="experience.html" class="nav-item">Experience</a>
-    <a href="projects.html" class="nav-item active">Projects</a>
-    <a href="blog.html" class="nav-item">Blog</a>
-    <button id="theme-toggle" class="theme-btn">🌙</button>
+    <div class="nav-left">
+      <span class="nav-brand">DevOps Portfolio</span>
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="skills.html" class="nav-item">Skills</a>
+      <a href="experience.html" class="nav-item">Experience</a>
+      <a href="projects.html" class="nav-item active">Projects</a>
+      <a href="blog.html" class="nav-item">Blog</a>
+    </div>
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
   </nav>
 
-  <div class="container">
+  <main class="container">
     <h1 class="page-title">Projects</h1>
 
-    <section class="card">
-      <h3>Automated Kubernetes Platform</h3>
-      <p>
-        Built a GitOps-driven Kubernetes platform using Argo CD, Terraform, and Helm.
-        Enabled zero-downtime deployments, automated rollbacks, and multi-region scaling.
-      </p>
-      <a href="#" class="nav-item">View Case Study →</a>
-    </section>
+    <section class="grid-2">
+      <article class="card project">
+        <h2>Automated Kubernetes Platform</h2>
+        <p>
+          Built a GitOps-driven Kubernetes platform using Argo CD, Terraform, and Helm. Enabled zero-downtime
+          deployments, automated rollbacks, and multi-region scaling.
+        </p>
+        <p class="project-meta">Tech: Kubernetes · Argo CD · Terraform · Helm</p>
+        <a href="#" class="project-link">View case study →</a>
+      </article>
 
-    <section class="card">
-      <h3>End-to-End CI/CD Pipeline</h3>
-      <p>
-        Designed a secure CI/CD pipeline using GitHub Actions with automated testing,
-        container builds, vulnerability scanning, and environment promotion.
-      </p>
-      <a href="#" class="nav-item">View Repository →</a>
-    </section>
+      <article class="card project">
+        <h2>End-to-End CI/CD Pipeline</h2>
+        <p>
+          Designed a secure CI/CD pipeline using GitHub Actions with automated testing, container builds,
+          vulnerability scanning, and environment promotion.
+        </p>
+        <p class="project-meta">Tech: GitHub Actions · Docker · Trivy · Terraform</p>
+        <a href="#" class="project-link">View repository →</a>
+      </article>
 
-    <section class="card">
-      <h3>Observability Stack</h3>
-      <p>
-        Implemented Prometheus, Grafana, Loki, and Tempo with SLO dashboards,
-        alerting rules, and distributed tracing.
-      </p>
-      <a href="#" class="nav-item">View Architecture →</a>
+      <article class="card project">
+        <h2>Observability Stack</h2>
+        <p>
+          Implemented Prometheus, Grafana, Loki, and Tempo with SLO dashboards, alerting rules, and distributed
+          tracing for critical services.
+        </p>
+        <p class="project-meta">Tech: Prometheus · Grafana · Loki · Tempo</p>
+        <a href="#" class="project-link">View architecture →</a>
+      </article>
+
+      <article class="card project">
+        <h2>Infrastructure as Code Library</h2>
+        <p>
+          Created reusable Terraform and Ansible modules for common infrastructure patterns, standardizing
+          environments across teams and reducing setup time.
+        </p>
+        <p class="project-meta">Tech: Terraform · Ansible · AWS</p>
+        <a href="#" class="project-link">View modules →</a>
+      </article>
     </section>
-  </div>
+  </main>
+
+  <footer class="footer">
+    <span>Projects that turn ideas into reliable, repeatable systems.</span>
+  </footer>
 
   <script src="theme.js"></script>
 </body>

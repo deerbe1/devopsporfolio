@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<link rel="stylesheet" href="style.css" />
-<script src="theme.js"></script>
-
 <head>
   <meta charset="UTF-8" />
   <title>Experience — DevOps Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <nav class="nav">
-    <a href="index.html" class="nav-item">Home</a>
-    <a href="skills.html" class="nav-item">Skills</a>
-    <a href="experience.html" class="nav-item active">Experience</a>
-	 <a href="projects.html" class="nav-item">Projects</a>
-    <a href="blog.html" class="nav-item active">Blog</a>
+    <div class="nav-left">
+      <span class="nav-brand">DevOps Portfolio</span>
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="skills.html" class="nav-item">Skills</a>
+      <a href="experience.html" class="nav-item active">Experience</a>
+      <a href="projects.html" class="nav-item">Projects</a>
+      <a href="blog.html" class="nav-item">Blog</a>
+    </div>
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
   </nav>
 
-  <div class="container">
-    <h1 class="page-title">Professional Experience</h1>
+  <main class="container">
+    <h1 class="page-title">Experience</h1>
 
-    <section class="timeline">
-      <div class="timeline-item">
-        <h3>Senior DevOps Engineer — Company Name</h3>
-        <span class="time">YYYY – Present</span>
+    <section class="card timeline">
+      <article class="timeline-item">
+        <h2>Senior DevOps Engineer · Company Name</h2>
+        <p class="timeline-meta">YYYY – Present · Cloud-native platform · Remote</p>
         <p>
-          Designed GitOps-driven Kubernetes platform, reduced deployment lead time by
-          <strong>XX%</strong>, implemented automated rollbacks, and improved release reliability.
+          Designed and maintained a GitOps-driven Kubernetes platform, reducing deployment lead time by
+          <strong>XX%</strong> and improving release reliability with automated rollbacks and progressive delivery.
         </p>
-      </div>
+      </article>
 
-      <div class="timeline-item">
-        <h3>DevOps Engineer — Company Name</h3>
-        <span class="time">YYYY – YYYY</span>
+      <article class="timeline-item">
+        <h2>DevOps Engineer · Company Name</h2>
+        <p class="timeline-meta">YYYY – YYYY · Microservices · Hybrid</p>
         <p>
-          Built CI/CD pipelines, implemented Terraform IaC, and introduced centralized logging
-          and metrics, reducing MTTR by <strong>YY%</strong>.
+          Built CI/CD pipelines for microservices, implemented infrastructure as code with Terraform, and introduced
+          centralized logging and metrics, cutting incident resolution time by <strong>YY%</strong>.
         </p>
-      </div>
+      </article>
 
-      <div class="timeline-item">
-        <h3>SRE — Company Name</h3>
-        <span class="time">YYYY – YYYY</span>
+      <article class="timeline-item">
+        <h2>Site Reliability Engineer · Company Name</h2>
+        <p class="timeline-meta">YYYY – YYYY · High-traffic SaaS</p>
         <p>
-          Defined SLOs, improved alerting, and led post-incident reviews focused on
-          reliability and systemic improvements.
+          Defined SLOs and error budgets, implemented alerting best practices, and led post-incident reviews focused
+          on learning and systemic improvements.
         </p>
-      </div>
+      </article>
     </section>
-  </div>
+  </main>
+
+  <footer class="footer">
+    <span>Experience grounded in reliability, automation, and learning.</span>
+  </footer>
+
+  <script src="theme.js"></script>
 </body>
 </html>

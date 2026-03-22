@@ -1,53 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<link rel="stylesheet" href="style.css" />
-<script src="theme.js"></script>
-
 <head>
   <meta charset="UTF-8" />
   <title>DevOps Engineer Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <nav class="nav">
-    <a href="index.html" class="nav-item active">Home</a>
-    <a href="skills.html" class="nav-item">Skills</a>
-    <a href="experience.html" class="nav-item">Experience</a>
-	 <a href="projects.html" class="nav-item">Projects</a>
-    <a href="blog.html" class="nav-item active">Blog</a>
+    <div class="nav-left">
+      <span class="nav-brand">DevOps Portfolio</span>
+      <a href="index.html" class="nav-item active">Home</a>
+      <a href="skills.html" class="nav-item">Skills</a>
+      <a href="experience.html" class="nav-item">Experience</a>
+      <a href="projects.html" class="nav-item">Projects</a>
+      <a href="blog.html" class="nav-item">Blog</a>
+    </div>
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
   </nav>
 
-  <div class="container">
+  <main class="container">
     <header class="hero">
-      <h1 class="title">Your Name</h1>
-      <h2 class="subtitle">DevOps • SRE • Platform Engineering</h2>
-      <p class="summary">
-        DevOps engineer with <strong>X+ years</strong> of experience building automated,
-        observable, and scalable cloud infrastructure. Passionate about CI/CD,
-        Kubernetes, IaC, and improving developer experience.
+      <p class="hero-kicker">DevOps • SRE • Platform Engineering</p>
+      <h1 class="hero-title">ERIC BENOIT DEUFFI</h1>
+      <p class="hero-subtitle">
+        DevOps engineer with <strong>X+ years</strong> of experience building reliable, observable, and automated
+        infrastructure for cloud-native applications.
       </p>
+      <div class="hero-tags">
+        <span class="tag">CI/CD</span>
+        <span class="tag">Kubernetes</span>
+        <span class="tag">Infrastructure as Code</span>
+        <span class="tag">Observability</span>
+      </div>
     </header>
 
-    <section class="card">
-      <h3>About Me</h3>
-      <p>
-        I specialize in designing reliable systems, automating deployments, and
-        building infrastructure that scales. My work focuses on cloud-native
-        architectures, GitOps, observability, and operational excellence.
-      </p>
+    <section class="grid-2">
+      <section class="card">
+        <h2>About</h2>
+        <p>
+          I design and operate systems that are <strong>automated</strong>, <strong>resilient</strong>, and
+          <strong>observable</strong>. I enjoy turning manual workflows into repeatable pipelines, improving
+          developer experience, and building platforms that make shipping software safe and fast.
+        </p>
+        <p>
+          My focus areas include cloud infrastructure, GitOps, incident response, and continuous improvement
+          through metrics and feedback loops.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Quick facts</h2>
+        <ul class="facts">
+          <li><span>Location</span><span>HOUSTON, USA</span></li>
+          <li><span>Cloud</span><span>AWS / Azure / GCP</span></li>
+          <li><span>Focus</span><span>DevOps · SRE · Platform</span></li>
+          <li><span>Work mode</span><span>Remote / Hybrid</span></li>
+        </ul>
+      </section>
     </section>
 
     <section class="card">
-      <h3>Contact</h3>
+      <h2>Contact</h2>
       <ul class="contact-list">
-        <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
-        <li>LinkedIn: <a href="#">linkedin.com/in/your-profile</a></li>
-        <li>GitHub: <a href="#">github.com/your-username</a></li>
+        <li>Email: <a href="mailto:you@example.com">deuffi@gmail.com</a></li>
+        <li>LinkedIn: <a href="www.linkedin.com/in/ericdeuffi">ericdeuffi</a></li>
+        <li>GitHub: <a href="#">github.com/deerbe1</a></li>
+        <li>Portfolio: <a href="#">your-portfolio-url.com</a></li>
       </ul>
     </section>
-  </div>
+  </main>
+
+  <footer class="footer">
+    <span>Built with automation, reliability, and developer experience in mind.</span>
+  </footer>
+
+  <script src="theme.js"></script>
 </body>
 </html>
